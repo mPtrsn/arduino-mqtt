@@ -12,7 +12,7 @@ PubSubClient client(wifiClient);
 char* ssid = WLAN-NETZWERK;
 char* pw = WLAN-PASSWORT;
 
-char* mqttServer = "stec.fh-wedel.de";
+char* mqttServer = MQTT-BROOKER-ADRESSE;
 uint16_t mqttPort = 1883;
 char* topic = MQTT-TOPIC;
 
