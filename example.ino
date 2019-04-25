@@ -61,8 +61,11 @@ void reconnectToMqtt(){
 }
 
 void callback(char* topic, byte* payload, unsigned int length){
-  Serial.println("callback");
-  newMessage = handleMessage(topic,payload,length);
-  Serial.println("callback zu ende");
-  currentMessage = handleOutput(currentMessage,newMessage);
+  /*
+    Hier wird die eingegangene Nachricht verarbeitet.
+    
+    topic: das Topic
+    payload: Inhalt der Nachricht in bytes
+    length: Länge der Nachricht
+  */
 }
