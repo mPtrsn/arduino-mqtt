@@ -61,6 +61,10 @@ void reconnectToMqtt(){
 }
 
 void callback(char* topic, byte* payload, unsigned int length){
+  
+  if(strcmp((char*)payload, "hello world") == 0){
+    // wird ausgelöst wenn hello world an das  
+  }
   /*
     Hier wird die eingegangene Nachricht verarbeitet.
     
