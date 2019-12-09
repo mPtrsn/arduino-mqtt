@@ -60,16 +60,17 @@ void reconnectToMqtt(){
   }
 }
 
-void callback(char* topic, byte* payload, unsigned int length){
-  
-  if(strcmp((char*)payload, "hello world") == 0){
-    // wird ausgelöst wenn hello world an das  
-  }
-  /*
+/*
     Hier wird die eingegangene Nachricht verarbeitet.
     
     topic: das Topic
     payload: Inhalt der Nachricht in bytes
     length: Länge der Nachricht
   */
+void callback(char* topic, byte* payload, unsigned int length){
+  
+  if(strcmp((char*)payload, "hello world") == 0){
+    // wird ausgelöst wenn hello world an das topic gesendet wird
+  }
+  
 }
